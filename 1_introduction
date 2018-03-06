@@ -11,3 +11,22 @@
 
 
 ??为什么不显示???
+
+himiMacBookPro:G_MachineLearning_Note himi$ git branch --set-upstream-to=origin/<branch> master
+-bash: branch: No such file or directory
+himiMacBookPro:G_MachineLearning_Note himi$ git branch --set-upstream-to=origin/master master
+Branch master set up to track remote branch master from origin.
+himiMacBookPro:G_MachineLearning_Note himi$
+himiMacBookPro:G_MachineLearning_Note himi$ git pull
+error: Your local changes to the following files would be overwritten by merge:
+	.idea/vcs.xml
+Please, commit your changes or stash them before you can merge.
+Aborting
+himiMacBookPro:G_MachineLearning_Note himi$ git stash
+Saved working directory and index state WIP on master: f9f68de first commit
+HEAD is now at f9f68de first commit
+himiMacBookPro:G_MachineLearning_Note himi$
+himiMacBookPro:G_MachineLearning_Note himi$ git pull
+
+太蠢受不了
+明天再搞
