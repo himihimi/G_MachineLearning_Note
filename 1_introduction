@@ -1,0 +1,13 @@
+首先我要掌握怎么在git上加图片.
+那么我来试试相对路径
+
+> http://blog.csdn.net/slaughterdevil/article/details/79255933
+
+
+![avatar](./img_for_md/QQ20180307-001945@2x.png)
+
+![avatar](./QQ20180307-002151@2x.png)
+![avatar](/QQ20180307-002151@2x.png)
+
+
+??为什么不显示???
