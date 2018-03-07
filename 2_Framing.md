@@ -17,7 +17,7 @@ ML systems learn how to combine input to produce useful predictions on never-bef
 术语 fundamental machine learning terminology
 ---
 
-#### - 标签 Labels = 输出 (仿佛是in)
+## - 标签 Labels = 输出 (仿佛是in)
 
 - 标签是指我们要预测的真实事物 !要预测的目标!!!：y
 - 基本线性回归中的 y 变量
@@ -28,7 +28,7 @@ A label is the thing we're predicting—the y variable in - simple linear regres
 ```
 
 
-#### - 特征 Features = 输入 (仿佛是返回值)
+## - 特征 Features = 输入 (仿佛是返回值)
 
 - 指用于描述数据的 输入变量 ：xi
 - 基本线性回归中的 {x1, x2, ... xn} 变量
@@ -49,7 +49,7 @@ A feature is an input variable—the x variable in simple linear regression.
 ![](/img_for_md/QQ20180307-231035@2x.png)
 
 
-#### - 样本 Examples = 一份数据,包含输入输出 (仿佛是一次运行in和out)
+## - 样本 Examples = 一份数据,包含输入输出 (仿佛是一次运行in和out)
 - 样本是指数据的特定实例：x
 - 有标签样本具有 {特征, 标签}：(x, y)
     - 用于训练模型
@@ -80,7 +80,7 @@ An example is a particular instance of data, x.
 `unlabeled examples: {features, ?}: (x, ?) `
 
 
-#### - 模型 Models = (仿佛是函数function)
+## - 模型 Models = (仿佛是函数function)
 - 可将样本映射到预测标签：y'
 - 由模型的内部参数定义，这些内部参数值是通过 学习 得到的
 - 学习规律 创建模型
