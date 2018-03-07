@@ -1,10 +1,10 @@
-问题构建 (Framing)
+问题构建 Framing
 ---
 https://developers.google.com/machine-learning/crash-course/framing/video-lecture
 // 20180307
 
 
-- 什么是 监督式机器学习？
+- 什么是 监督式机器学习？ Supervised Machine Learning
     * 机器学习系统
     * 通过学习如何组合 输入信息 
     * 来对 从未见过的数据 做出有用的预测
@@ -14,25 +14,25 @@ ML systems learn how to combine input to produce useful predictions on never-bef
 ```
 
 
-fundamental machine learning terminology. 术语
+术语 fundamental machine learning terminology
 ---
 
+#### - 标签 Labels = 输出 (仿佛是in)
 
-
-
-- 标签 Labels = 输出 (仿佛是in)
-    - 标签是指我们要预测的真实事物 !要预测的目标!!!：y
-    - 基本线性回归中的 y 变量
+- 标签是指我们要预测的真实事物 !要预测的目标!!!：y
+- 基本线性回归中的 y 变量
 
 ```
 在简单线性回归中，标签是我们要预测的事物，即 y 变量。标签可以是小麦未来的价格、图片中显示的动物品种、音频剪辑的含义或任何事物。
 A label is the thing we're predicting—the y variable in - simple linear regression.-
 ```
 
-- 特征 Features = 输入 (仿佛是返回值)
-    - 指用于描述数据的 输入变量 ：xi
-    - 基本线性回归中的 {x1, x2, ... xn} 变量
-    > 各种能拿来提供给机器学习的信息都算, 就有点像多元分析的中的因素, 可以拿来分析的都可以
+
+#### - 特征 Features = 输入 (仿佛是返回值)
+
+- 指用于描述数据的 输入变量 ：xi
+- 基本线性回归中的 {x1, x2, ... xn} 变量
+> 各种能拿来提供给机器学习的信息都算, 就有点像多元分析的中的因素, 可以拿来分析的都可以
 
 ```
 - 在简单线性回归中，特征是输入变量，即 x 变量。简单的机器学习项目可能会使用单个特征，而比较复杂的机器学习项目可能会使用数百万个特征，按如下方式指定：
@@ -45,18 +45,19 @@ A feature is an input variable—the x variable in simple linear regression.
         电子邮件中包含“一种奇怪的把戏”这样的短语。
 ```
 
-![特征不能光看脸](/img_for_md/QQ20180307-231035@2x.png)
+＞特征不能光看脸
+![](/img_for_md/QQ20180307-231035@2x.png)
 
 
-- 样本 Examples = 一份数据,包含输入输出 (仿佛是一次运行in和out)
-    - 样本是指数据的特定实例：x
-    - 有标签样本具有 {特征, 标签}：(x, y)
-        - 用于训练模型
-    > 有输入有输入的
-    
-    - 无标签样本具有 {特征, ?}：(x, ?)
-        - 用于对新数据做出预测
-    >只有输入无输出的?
+#### - 样本 Examples = 一份数据,包含输入输出 (仿佛是一次运行in和out)
+- 样本是指数据的特定实例：x
+- 有标签样本具有 {特征, 标签}：(x, y)
+    - 用于训练模型
+> 有输入有输入的
+
+- 无标签样本具有 {特征, ?}：(x, ?)
+    - 用于对新数据做出预测
+>只有输入无输出的?
 
 ```
 样本是指数据的特定实例：x。（我们采用粗体 x 表示它是一个矢量。）
@@ -79,10 +80,10 @@ An example is a particular instance of data, x.
 `unlabeled examples: {features, ?}: (x, ?) `
 
 
-- 模型 Models = (仿佛是函数function)
-    - 可将样本映射到预测标签：y'
-    - 由模型的内部参数定义，这些内部参数值是通过 学习 得到的
-    - 学习规律 创建模型
+#### - 模型 Models = (仿佛是函数function)
+- 可将样本映射到预测标签：y'
+- 由模型的内部参数定义，这些内部参数值是通过 学习 得到的
+- 学习规律 创建模型
 ```
 模型定义了特征与标签之间的关系。
 A model defines the relationship between features and label.
@@ -113,7 +114,9 @@ A classification model predicts discrete values.
     
     
     
+    
 ~~瞎bibi时间~~
+---
 感觉有点像以前学的多元分析的一个什么分析
 就是很多的因素,然后算一个值,可以最终知道这个因素到底是否和结果有关,或者什么是最相关
 百度了一下貌似叫 相关分析(correlation analysis)

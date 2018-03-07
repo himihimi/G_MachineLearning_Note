@@ -14,22 +14,24 @@
 
 ![某个例子](/img_for_md/QQ20180307-234329@2x.png)
 
-- 方差 A Convenient Loss Function for Regression
-    - 给定样本的 L2 损失也称为平方误差
-    - L2 Loss for a given example is also called [ squared error ]
-    
-    = 预测值和标签值之差的平方
-    = (观察值 - 预测值)^2
-    = (y - y')^2
-    = the square of the difference between the label and the prediction
-    = (observation - prediction(x))^2
-    = (y - y')^2
+
+#### - 方差 A Convenient Loss Function for Regression
+- 给定样本的 L2 损失也称为平方误差
+- L2 Loss for a given example is also called [ squared error ]
+
+= 预测值和标签值之差的平方
+= (观察值 - 预测值)^2
+= (y - y')^2
+= the square of the difference between the label and the prediction
+= (observation - prediction(x))^2
+= (y - y')^2
+
 
 着眼于最大限度地 减少整个数据集的误差 minimizing loss across our entire data set
-![](/img_for_md/QQ20180307-234543@2x.png)
+![](/img_for_md/QQ20180307-234543@2x.png){:height="50%" width="50%"}
 
 
-- 线性回归
+#### - 线性回归
 
 ```
 Ruth 阿姨将她喜爱的蟋蟀数据库作为生日礼物送给您，并邀请您自己利用该数据库训练一个模型，从而预测鸣叫声与温度的关系。
@@ -56,25 +58,27 @@ To infer (predict) the temperature  for a new chirps-per-minute value , just plu
 The subscripts (for example,  and ) foreshadow more sophisticated models that rely on multiple features. For example, a model that relies on three features would use the following equation:
 ```
 
-- 训练Training 模型 a model
-    - 表示通过有标签样本来学习（确定）所有权重和偏差 the weights and the bias 的理想值。
-    - 在监督式学习中，机器学习算法通过以下方式构建模型：检查多个样本并尝试找出可最大限度地减少损失的模型；
-    - 这一过程称为 经验风险最小化 empirical risk minimization。
+#### - 训练Training 模型 a model
+- 表示通过有标签样本来学习（确定）所有权重和偏差 the weights and the bias 的理想值。
+- 在监督式学习中，机器学习算法通过以下方式构建模型：检查多个样本并尝试找出可最大限度地减少损失的模型；
+- 这一过程称为 经验风险最小化 empirical risk minimization。
 
 
-- 损失是对糟糕预测的惩罚 Loss is the penalty for a bad prediction.
-    - 也就是说，损失是一个数值，表示对于单个样本而言模型预测的准确程度。
-    -  loss is a number indicating how bad the model's prediction was on a single example.
-    - 如果模型的预测完全准确，则损失为零，否则损失会较大。
-    - If the model's prediction is perfect, the loss is zero; otherwise, the loss is greater.
-    - 训练模型的目标 是从所有样本中找到 一组平均损失“较小”的权重和偏差。
+#### - 损失是对糟糕预测的惩罚 Loss is the penalty for a bad prediction.
+- 也就是说，损失是一个数值，表示对于单个样本而言模型预测的准确程度。
+-  loss is a number indicating how bad the model's prediction was on a single example.
+- 如果模型的预测完全准确，则损失为零，否则损失会较大。
+- If the model's prediction is perfect, the loss is zero; otherwise, the loss is greater.
+- 训练模型的目标 是从所有样本中找到 一组平均损失“较小”的权重和偏差。
 
 
-![](/img_for_md/QQ20180307-235436@2x.png)
+#### 均方差
+![](/img_for_md/QQ20180307-235436@2x.png){:height="50%" width="50%"}
 - 不记得n-1的那个叫啥了
 
 
 ~~瞎bibi~~
+
 怎么这么多叫法,方差原来是叫l2误差....
 诶我不记得大学概率论的时候叫l2误差啊.....
 
@@ -82,3 +86,5 @@ The subscripts (for example,  and ) foreshadow more sophisticated models that re
 线性回归这个真很像多元的那个分析
 
 嗯 目前还是在捡起来老本的状态.
+
+我觉得我还是想设置一下截图的大小,太大了.
