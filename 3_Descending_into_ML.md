@@ -78,7 +78,7 @@ The subscripts (for example,  and ) foreshadow more sophisticated models that re
 
 
 ~~瞎bibi~~
-
+---
 怎么这么多叫法,方差原来是叫l2误差....
 诶我不记得大学概率论的时候叫l2误差啊.....
 
@@ -88,3 +88,8 @@ The subscripts (for example,  and ) foreshadow more sophisticated models that re
 嗯 目前还是在捡起来老本的状态.
 
 我觉得我还是想设置一下截图的大小,太大了.
+
+感觉 --- 和 ## 一个效果 (啊本来就是一个效果啊)
+
+### 那这个是啥效果
+试试
