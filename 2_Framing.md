@@ -17,7 +17,7 @@ ML systems learn how to combine input to produce useful predictions on never-bef
 术语 fundamental machine learning terminology
 ---
 
-## - 标签 Labels = 输出 (仿佛是in)
+## - 标签 Labels = 输出 (仿佛是)
 
 - 标签是指我们要预测的真实事物 !要预测的目标!!!：y
 - 基本线性回归中的 y 变量

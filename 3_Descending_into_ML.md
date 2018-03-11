@@ -15,8 +15,9 @@
 ![某个例子](/img_for_md/QQ20180307-234329@2x.png)
 
 
-## - 方差 A Convenient Loss Function for Regression
+## - ~~方差~~ 我这里被机翻误导,这不是我们常用的那个平均值方差 A Convenient Loss Function for Regression
 - 给定样本的 L2 损失也称为平方误差
+就叫他 l2方差吧 现在我是知道了
 - L2 Loss for a given example is also called [ squared error ]
 
 = 预测值和标签值之差的平方
@@ -30,7 +31,8 @@
 着眼于最大限度地 减少整个数据集的误差 minimizing loss across our entire data set
 ![](/img_for_md/QQ20180307-234543@2x.png){:height="50%" width="50%"}
 
-
+感觉光看机翻是要命,还是尽量每次都理解透视频的逻辑和内容吧
+--
 ## - 线性回归
 
 ```
