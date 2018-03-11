@@ -1,5 +1,8 @@
 ## 降低损失 Reducing Loss
-为了训练模型，我们需要一种可降低模型损失的好方法。迭代方法是一种广泛用于降低损失的方法，而且使用起来简单有效。
+为了训练模型，我们需要一种可降低模型损失的好方法。  
+迭代方法是一种广泛用于降低损失的方法，而且使用起来简单有效。  
+
+要换行要加两个空格??
 
 --
 
@@ -17,14 +20,17 @@
 ## 如何选择模型参数the set of model parameters 来减小误差
 
 每一个模型参数都对应一个不同的模型,然后用这个模型计算出相应的 预测值,求l2 误差
+
 所以不同参数 可以求不同的l2误差.
 
 那参数, w0 - wn 有很多啊 
+
 是一个一个取还是一组一组取来测试呢
 
 > 如果有 a direction to go in within parameter space 就很好
 
 也就是想要一个参数往哪里走的方向.
+
 往正或者负.
 
 > Some sort of guide such that each set of new -hyper-parameters- that we took on had a lower loss than the one before it.
@@ -37,6 +43,7 @@
 ## 如何降低损失？
 
 此次课程里以l2损失为衡量损失的数
+
 所以后面貌似都会是l2loss的计算方式
 
 >(y - y')2 相对于权重和偏差的导数 可让我们了解指定样本的损失变化情况 Derivative of (y - y')2 with respect to the weights and biases tells us how loss changes for a given example
@@ -47,10 +54,12 @@
 
 > The derivative of the loss function (with respect to) (= about/ with ) the model parameters.
 
+```
 gradient? 中文字幕说是梯度?? 斜率
 Derivative 是导数?
 所以是 得到方向是计算斜率?
 所以是计算模型的 l2loss的 导数? 把参数视作变量的求导数?
+```
 
 ```
 * gradient:
@@ -75,12 +84,14 @@ Derivative 是导数?
 
 - 易于计算且为凸形 (x)  
   Simple to compute and convex
+  
 ↑我觉得这是翻译问题,应该是下凹....这个中文教程真的没问题么???
 
 - 因此，我们在能够尽可能降低损失的方向上反复采取小步
+
 So we repeatedly take small steps in the direction that minimizes loss
 
-- 我们将这些小步称为梯度步长（但它们实际上是负梯度步长）
+- 我们将这些小步称为梯度步长（但它们实际上是负梯度步长） 
 We call these Gradient Steps (But they're really negative Gradient Steps)
 ↑这翻译真的是这样么?
 why not 斜率步长??
