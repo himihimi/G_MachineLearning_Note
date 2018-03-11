@@ -13,7 +13,8 @@
 - 尝试不同的学习速率。 Experiment with learning rate.
 
 首先为了便于理解  
-其实梯度,叫梯度,就是斜率 ? 不是很严谨, 应该说是那个三角形x ⊿ 不是这个三角形,我打不出来.
+~~其实梯度,叫梯度,就是斜率 ? 不是很严谨, 应该说是那个三角形x ⊿ 不是这个三角形,我打不出来.~~  
+~~啊我不知道啥是梯度~~
 
 
 ## 如何选择模型参数the set of model parameters 来减小误差
@@ -85,19 +86,40 @@ Derivative 是导数?
 So we repeatedly take small steps in the direction that minimizes loss
 
 - 我们将这些小步称为梯度步长（但它们实际上是负梯度步长  
-We call these Gradient Steps (But they're really negative Gradient Steps)
+We call these Gradient Steps (But they're really negative Gradient Steps)  
 ↑这翻译真的是这样么?  
 why not 斜率步长??  
 
 - 这种优化策略称为梯度下降法  
-This optimization strategy is called Gradient Descent
+This optimization strategy is called Gradient Descent  
 
-应该是斜率下降法? 啊受不了,真的是叫梯度啊.不就是斜率 不就是导数么怎么这么扯淡
+应该是斜率下降法? 啊受不了,真的是叫梯度啊.不就是斜率 不就是导数么怎么这么扯淡  
 
 
 感觉可以算算的一个:  
 https://baike.baidu.com/item/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/4864937?fr=aladdin
 
+
+## 梯度
+https://coding.net/u/metaquant/p/blog/topic/360699  
+图片中有  
+>  梯度可以定义为一个函数的全部偏导数构成的向量(这一点与偏导数与方向导数不同，两者都为标量)。
+
+> 事实上，梯度向量的方向即为函数值增长最快的方向  
+
+> 简而言之，梯度是偏导数的矢量；  
+它可以让您了解哪个方向距离目标“更近”或“更远”。
+
+?? 偏导数?? 
+
+> 请注意，梯度是一个矢量，因此具有以下两个特征：  
+- 方向
+- 大小
+梯度始终指向损失函数中增长最为迅猛的方向。  
+梯度下降法算法会沿着负梯度的方向走一步，以便尽快降低损失  
+
+![](img_for_md/WX20180311-231837@2x.png)
+![](img_for_md/WX20180311-232122@2x.png)
 
 ## 梯度下降法示意图
 
@@ -127,7 +149,62 @@ https://baike.baidu.com/item/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/4864937?fr=ala
 ?????
 不太明白先后关系  
 
+
+
 ![](img_for_md/WX20180311-203842@2x.png)
 
 
-##
+- diverge 偏离
+
+--  
+
+## Weight Initialization 初始值
+
+![](img_for_md/WX20180311-205938@2x.png)
+
+
+
+
+## SGD & Mini-Batch Gradient Descent SGD 和小批量梯度下降法
+
+- Could compute gradient over entire data set on each step,  
+but this turns out to be unnecessary
+- Computing gradient on small data samples works well
+    - On every step, get a new random sample
+
+- Stochastic Gradient Descent: one example at a time  
+随机梯度下降法  ：一次抽取一个样本  
+
+- Mini-Batch Gradient Descent: batches of 10-1000
+    - Loss & gradients are averaged over the batch  损失和梯度在整批范围内达到平衡  
+  小批量梯度下降法：每批包含 10-1000 个样本
+
+
+
+
+## 学习速率 步长 梯度
+
+```
+正如之前所述，梯度矢量具有方向和大小。
+梯度下降法算法用 [梯度] 乘以 [一个称为学习速率（有时也称为步长）的标量] ，以确定下一个点的位置。
+```
+
+> 例如，如果梯度大小为 2.5，学习速率为 0.01  
+则梯度下降法算法会选择距离前一个点 0.025 的位置作为下一个点。
+
+梯度带着方向,乘上标量就是方向不变长度改变的一个向量.
+
+```
+超参数是编程人员在机器学习算法中用于调整的旋钮。
+大多数机器学习编程人员会花费相当多的时间来调整学习速率。
+```
+
+梯度是各个偏导的向量和
+偏导就是在某一个维度/变量的 导数
+
+
+![](/img_for_md/WX20180312-001807@2x.png)
+![](/img_for_md/WX20180312-001857@2x.png)
+
+
+
